@@ -365,7 +365,7 @@ def api_play_url(type, channel=None, id=None, video_data=None, from_beginning=0,
         pass
 
     if type == 'channel':
-        channel_url = '{base_url}/v8/epg/programlocations/live'.format(base_url=CONST_URLS['api']
+        channel_url = '{base_url}/v8/epg/programlocations/live'.format(base_url=CONST_URLS['api'])
 
         download = api_download(url=channel_url, type='get', headers=None, data=None, json_data=False, return_json=True)
         data = download['data']
